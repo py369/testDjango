@@ -15,3 +15,19 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+    
+class Voetbalspelers(Post):
+    title=None
+    text=None
+    naam = models.CharField(max_length=100)
+    voetbalclub = models.CharField(max_length=100, default="Onbekend")
+    
+
+        
+    def __str__(self):
+        return self.naam
+    
+    # Instellen van de correcte meervoudsvorm
+    class Meta:
+        verbose_name_plural = "Voetbalspelers"
