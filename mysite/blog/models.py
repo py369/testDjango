@@ -16,14 +16,13 @@ class Post(models.Model):
     def __str__(self):
         return self.title
     
-    
+# maak een nieuw post-model aan   
 class Voetbalspelers(Post):
     title=None
     text=None
     naam = models.CharField(max_length=100)
     voetbalclub = models.CharField(max_length=100, default="Onbekend")
     
-
         
     def __str__(self):
         return self.naam
