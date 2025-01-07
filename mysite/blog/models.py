@@ -31,3 +31,4 @@ class Voetbalspelers(Post):
     # Instellen van de correcte meervoudsvorm
     class Meta:
         verbose_name_plural = "Voetbalspelers"
+        
