@@ -27,6 +27,8 @@ h2 a{
     
 }
 
+a{color: black;}
+
 
 
 
@@ -37,3 +39,6 @@ article{
     background-color: rgb(244, 174, 234);
 }
 
+header, footer {
+    min-height: 50px;
+}
