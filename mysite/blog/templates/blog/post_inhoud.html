@@ -12,6 +12,8 @@
     <p>
         {{ post.text|linebreaksbr }}
     </p>
-    <a href="{% url 'delete' post.id %}">Verwijder</a>
+    {% if user.is_authenticated %}
+        <a href="{% url 'delete' post.id %}">Verwijder</a>
+    {% endif %}
 </article>
 {% endblock %}
